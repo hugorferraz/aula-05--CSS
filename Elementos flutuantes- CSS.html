@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang-"pr-br">
+<head>
+<meta charset="utf-8">
+<title> elementos flutuantes - galeria de imagens</title>
+<style>
+
+body{
+background: #B0C4DE;
+}
+
+.foto{
+background: #FFFFFF;
+padding: 5px;
+float: left;
+margin: 10px;
+}
+
+.centralizar{
+width: 1320px;
+margin: auto;
+}
+
+clear{
+clear: both;
+}
+
+p.fotmatar{
+text-align: justify;
+margin: 20px;
+}
+
+div.static{
+position:static;
+border: 3px solid #73AD21;
+}
+
+div.relative{
+position:relative;
+left:50px;
+border: 3px solid #73AD21;
+width:300px;
+}
+
+div.relativa{
+position:relative;
+width:400px;
+height:200px;
+border: 3px solid #73AD21;
+}
+
+div.absoluta{
+position:absolute;
+top:80px;
+right:o;
+width:200px;
+height: 100px;
+border: 3px solid #73AD21;
+}
+div.fixo{
+position:fixed;
+bottom: 0;
+right: 0;
+border: 3px solid red;
+width:300px;
+}
+
+div.stick{
+position:sticky;
+top:0;
+padding:5px;
+background-color:#CAE8CA;
+border: 3px solid #73AD21;
+}
+
+</style>
+<body>
+<h1> Position: static</h1>
+<p> Um elemento com posição static não está posicionado
+de maneira especial, isto é, estará sempre posicionado 
+de acordo com o fluxo normal da página.</p>
+<div class="static">
+<p> Este elemento foi posicionado com static</p>
+</div>
+
+<h1> Position: relative</h1>
+<p> O elemento é posicionado de acorod com o fluxo normal
+do documento, e, em seguida, deslocado em relação à própria
+base nos valores de top, right, bottom, e left.</p>
+<div class="relative">
+<p> este elemento foi posicionado com relative. </p>
+</div>
+
+<h1> Position: Absolute</p>
+<p> Um elemento com posição absoluta está posicionado em relação
+ao antepassado posicionado mais próximo.</p>
+<div class="relativa"
+<p> Este elemento tem posição relativa. </p>
+<div class="absoluta">
+<p>Este elemento tem posição absoluta. </p>
+</div>
+</div>
+
+<h1> Position: fixed</h1>
+<p> Um elemento com posição fixed está posicionado em relação à viewport,
+o que significa que ele fica sempre no mesmo lugar, mesmo que a página seja rolada.</p>
+<div class="fixo">
+<p> Este elemento está posicionado fixo </p>
+</div>
+
+<h2>Position: Sticky </h2>
+<div class="sticky">Utilizando sticky</div>
+
+<div class="centralizar">
+<div class="foto">
+<img src="flores_campo.jpg">
+<p> Um colorido jardim de flores. </p>
+
+</div>
+
+<div class="foto">
+<img src="poppies.jpg">
+<p> Linda flor laranja. </p>
+</div>
+
+<div class="foto">
+<img src="summerfield.jpg">
+<p> Menina olhando o pôr do sol. </p>
+</div>
+
+<div class="foto">
+<img src="tree.jpg">
+<p> Imagem da natureza. </p>
+</div>
+
+</div>
+</body>
+</html>
